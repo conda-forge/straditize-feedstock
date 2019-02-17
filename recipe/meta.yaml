@@ -1,6 +1,6 @@
 {% set name = "straditize" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "2b62c05e70fa4b7e57ed8fc3e2205f10d5383a6000442dce5b4360fd22265ccd" %}
+{% set version = "0.1.1" %}
+{% set sha256 = "42dac1facd4dabbaaed66e11b942311521260f77c483e559cfe4b7242f0e7e37" %}
 
 package:
   name: {{ name|lower }}

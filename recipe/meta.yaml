@@ -1,19 +1,16 @@
-{% set name = "straditize" %}
 {% set version = "0.1.1" %}
-{% set sha256 = "42dac1facd4dabbaaed66e11b942311521260f77c483e559cfe4b7242f0e7e37" %}
 
 package:
-  name: {{ name|lower }}
+  name: straditize
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/s/straditize/straditize-{{ version }}.tar.gz
+  sha256: 42dac1facd4dabbaaed66e11b942311521260f77c483e559cfe4b7242f0e7e37
 
 build:
   number: 3
-  script: python -m pip install . --no-deps --ignore-installed -vvv
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [py == 27]
   entry_points:
     - straditize = straditize.__main__:main
@@ -50,7 +47,7 @@ app:
 
 about:
   home: https://github.com/Chilipp/straditize
-  license: GPLv3
+  license: GPL-3.0
   license_family: GPL3
   license_file: LICENSE
   summary: 'Python package for digitizing pollen diagrams'

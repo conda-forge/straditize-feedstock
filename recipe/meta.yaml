@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: straditize
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/straditize/straditize-{{ version }}.tar.gz
-  sha256: 42dac1facd4dabbaaed66e11b942311521260f77c483e559cfe4b7242f0e7e37
+  sha256: 0bd62bbe1c71b84b20f6cdf5e6db94e244d30142cc4f4473b99d6dddb1216b03
 
 build:
-  number: 3
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [py == 27]
   entry_points:

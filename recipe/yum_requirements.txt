@@ -1,9 +1,10 @@
-alsa-lib
+xorg-x11-server-Xvfb
+gtk2-devel
 libXScrnSaver
-libXcomposite
-libXcursor
-libXi
-libXrandr
 libXtst
+alsa-lib
 mesa-libEGL
-mesa-libGL
+gtkmm24
+pciutils
+libselinux
+mesa-libgbm
